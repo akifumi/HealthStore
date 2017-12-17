@@ -1,0 +1,6 @@
+framework module HealthStore {
+  umbrella header "HealthStore-umbrella.h"
+
+  export *
+  module * { export * }
+}

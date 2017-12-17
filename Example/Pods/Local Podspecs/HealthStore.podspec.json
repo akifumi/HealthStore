@@ -1,0 +1,22 @@
+{
+  "name": "HealthStore",
+  "version": "0.1.0",
+  "summary": "A short description of HealthStore.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/akifumi/HealthStore",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "akifumi": "akifumi.fukaya@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/akifumi/HealthStore.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HealthStore/Classes/**/*"
+}
