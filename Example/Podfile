@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HealthStore_Example' do
+  pod 'HealthStore', :path => '../'
+
+  target 'HealthStore_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
