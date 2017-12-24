@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		014F54F9456ACF5DCFFC9A4EC2A7E189 /* HealthStore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D087C4D61750876B3B1A38E98438F1 /* HealthStore-dummy.m */; };
 		048EEDCC2384E5BD2C5BC2B989695C6B /* Pods-HealthStore_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 260D4768B1583F50D21A091230F7D950 /* Pods-HealthStore_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B6487C6DA46B694B4E36920DAF8339C /* HealthStore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A1A1EB40C0CEAB8544E192733A4679 /* HealthStore-dummy.m */; };
+		132B7C46FF121F2460590472B1ABF511 /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBABDD4760AD649800664714092A3352 /* HealthStore.swift */; };
 		1AB5A0FABC2396B6FC0D1491845A6908 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		8484FD3010F763869FCDBE99A75328C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		24AF34029A508C0E62DD361734549578 /* DailyQueryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82643014E77E109CBFD37D81B99F9992 /* DailyQueryBuilder.swift */; };
+		2A3B68996251BCCB238DB77BFA791545 /* HealthStore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52A46398E389A7EB8520E7D474487189 /* HealthStore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EF3B55840750B49074B6FF0F0FD6C8F /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24953EC3F9F6F976B8C731605EA41F1E /* Source.swift */; };
+		55F8384856EB5BE47B68CFCFACD2E935 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		84F384752EFFC0D43B4AA88325D658D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		8C3FFAF6EF455FE9F88704980E2B1201 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C21ACF5FEC13D4272C1533CF64DA5 /* ReplaceMe.swift */; };
+		A77CAADC2A4B5D78EDD37A4320301CCA /* RestrictedSourceQueryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD29EDDDE0FF8534C9AF56551CF9C1 /* RestrictedSourceQueryBuilder.swift */; };
+		A8B2E685643A8E864586A3D1D7BFEEB2 /* HealthStoreQueryBuildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D6DDE50B26B0F7C3C2DBEFCD0A6F6 /* HealthStoreQueryBuildable.swift */; };
+		C15F0547FFBE3D75382D75174430F7D8 /* HealthSourceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9873B38C792063FC32C3E2CC7F53B975 /* HealthSourceProvider.swift */; };
 		C927D870C66DC66F0D39C8291BE9CE4A /* Pods-HealthStore_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD689400A74E3BD2452A129A2FA0E031 /* Pods-HealthStore_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E37EE155ABB71EB71A859F6B047659B6 /* StepSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418E9574AE25A21EDE14C35FC84A2C9A /* StepSource.swift */; };
 		F2ABE5919D8AEA63DA1C590CACA91E26 /* Pods-HealthStore_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0BAD92BC3F8339567BC067B51FE6C6 /* Pods-HealthStore_Tests-dummy.m */; };
-		F8EFDFED6FA65ED821794F37C30A9F60 /* HealthStore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E3D6D2433A98F298968641EEEC659D2 /* HealthStore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB281579558EAB98E3FAF186E191E966 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60654A8610E950146E77B5774B266D0C /* Date+Extension.swift */; };
 		FBC1DAB6CE2702BE7D53F33A0039A3F8 /* Pods-HealthStore_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F0FD20D980BC7345DF6B76E94991C6 /* Pods-HealthStore_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +31,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 95FCD9A3761E33E1C25A8A04E1ED1294;
+			remoteGlobalIDString = 3F7D235496A746C21E65BEC51F3874EF;
 			remoteInfo = HealthStore;
 		};
 /* End PBXContainerItemProxy section */
@@ -33,34 +40,41 @@
 		014537D139DB91D61640FCF4300DB1C2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02EDFFA2B049C5769D8DFC63F6348D3C /* Pods-HealthStore_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HealthStore_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		049D84F3458B6FD424EEF3E4F37533B7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04D087C4D61750876B3B1A38E98438F1 /* HealthStore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HealthStore-dummy.m"; sourceTree = "<group>"; };
 		09AF43CAB0DF515BF15CEB9D77EF6E6A /* Pods-HealthStore_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HealthStore_Tests.modulemap"; sourceTree = "<group>"; };
-		0C6F36A05F3D210476D3522933073A2F /* HealthStore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HealthStore.xcconfig; sourceTree = "<group>"; };
 		0EE489798B80288746AA4CD540714F9D /* Pods_HealthStore_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HealthStore_Example.framework; path = "Pods-HealthStore_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F3D6DDE50B26B0F7C3C2DBEFCD0A6F6 /* HealthStoreQueryBuildable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HealthStoreQueryBuildable.swift; sourceTree = "<group>"; };
 		0F559E02ECDD4AE434B83C4DC40B53FF /* Pods-HealthStore_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HealthStore_Example.modulemap"; sourceTree = "<group>"; };
 		158B9FA878CD018FC27C59165B4130A1 /* HealthStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HealthStore.framework; path = HealthStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18387150F6D435AB399C1EFB3237FEB3 /* Pods-HealthStore_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthStore_Example.release.xcconfig"; sourceTree = "<group>"; };
-		25A0532CF1FAE402D9A6692C58B9DACD /* HealthStore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HealthStore.modulemap; sourceTree = "<group>"; };
+		24953EC3F9F6F976B8C731605EA41F1E /* Source.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
 		260D4768B1583F50D21A091230F7D950 /* Pods-HealthStore_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthStore_Tests-umbrella.h"; sourceTree = "<group>"; };
-		388E51B4F34EF046B0E9BB7D621BA3C9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A3C21ACF5FEC13D4272C1533CF64DA5 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = HealthStore/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		403AC81D156E42323F5712547F7D3EB4 /* Pods-HealthStore_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HealthStore_Example-resources.sh"; sourceTree = "<group>"; };
+		418E9574AE25A21EDE14C35FC84A2C9A /* StepSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StepSource.swift; sourceTree = "<group>"; };
 		4CA95330D671DA8B6334ABB061FE922B /* Pods-HealthStore_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HealthStore_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4DDBE3BE91EDF1311837BD31759C1224 /* Pods-HealthStore_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HealthStore_Tests-resources.sh"; sourceTree = "<group>"; };
+		52A46398E389A7EB8520E7D474487189 /* HealthStore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HealthStore-umbrella.h"; sourceTree = "<group>"; };
+		531A605C08BAC8DF90BB56221CF05188 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AE0D562327467DA39A3A07369737D05 /* Pods-HealthStore_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthStore_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		60654A8610E950146E77B5774B266D0C /* Date+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6F0BAD92BC3F8339567BC067B51FE6C6 /* Pods-HealthStore_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthStore_Tests-dummy.m"; sourceTree = "<group>"; };
 		761CD0D53D8C84993DC0B6C840F4A0A6 /* Pods-HealthStore_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HealthStore_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7AAD29EDDDE0FF8534C9AF56551CF9C1 /* RestrictedSourceQueryBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RestrictedSourceQueryBuilder.swift; sourceTree = "<group>"; };
+		82643014E77E109CBFD37D81B99F9992 /* DailyQueryBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyQueryBuilder.swift; sourceTree = "<group>"; };
+		879E8F3EFC26BBCB1D40003CF93F6AE4 /* HealthStore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HealthStore.xcconfig; sourceTree = "<group>"; };
 		8A05C33D7008D11398162488398843F8 /* Pods-HealthStore_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HealthStore_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		8E3D6D2433A98F298968641EEEC659D2 /* HealthStore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HealthStore-umbrella.h"; sourceTree = "<group>"; };
 		8FAB2F426A62338BC2B7C11E02543718 /* Pods-HealthStore_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HealthStore_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9873B38C792063FC32C3E2CC7F53B975 /* HealthSourceProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HealthSourceProvider.swift; path = HealthStore/Classes/HealthSourceProvider.swift; sourceTree = "<group>"; };
 		A1F0FD20D980BC7345DF6B76E94991C6 /* Pods-HealthStore_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthStore_Example-dummy.m"; sourceTree = "<group>"; };
+		A2A1A1EB40C0CEAB8544E192733A4679 /* HealthStore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HealthStore-dummy.m"; sourceTree = "<group>"; };
+		B694F63704559C84CCA5F6FE035E05D2 /* HealthStore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HealthStore-prefix.pch"; sourceTree = "<group>"; };
 		B73346FF018D005E5FD52CDFF86B224F /* Pods-HealthStore_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HealthStore_Example-frameworks.sh"; sourceTree = "<group>"; };
 		BD689400A74E3BD2452A129A2FA0E031 /* Pods-HealthStore_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthStore_Example-umbrella.h"; sourceTree = "<group>"; };
+		C69AB04CD43889D76594A1616AEE314D /* HealthStore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HealthStore.modulemap; sourceTree = "<group>"; };
+		DBABDD4760AD649800664714092A3352 /* HealthStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HealthStore.swift; path = HealthStore/Classes/HealthStore.swift; sourceTree = "<group>"; };
 		E046D6F53E95F366EC35D2A8355C6944 /* Pods_HealthStore_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HealthStore_Tests.framework; path = "Pods-HealthStore_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1DE9CE3A0203E67340939EAAB1EF76A /* Pods-HealthStore_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthStore_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		ED58415D52F61E50FFF5EA63A408E76D /* HealthStore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HealthStore-prefix.pch"; sourceTree = "<group>"; };
 		F65C552E7FE646DA8EF2E5CFA2E7D671 /* Pods-HealthStore_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthStore_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,11 +95,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD37E62CB493950F65832B3A0613B2F8 /* Frameworks */ = {
+		66B664FDD27763A81F2884D9AF086D7A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8484FD3010F763869FCDBE99A75328C9 /* Foundation.framework in Frameworks */,
+				55F8384856EB5BE47B68CFCFACD2E935 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,28 +124,6 @@
 			path = "Target Support Files/Pods-HealthStore_Example";
 			sourceTree = "<group>";
 		};
-		3188C6DB8B86154CFD5B4171FAFA4D6A /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				94D11B616941A0597B3E6540A853CFB2 /* HealthStore */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		492D5A3C4C6DF8C0D6B1C9C6CADE6150 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				25A0532CF1FAE402D9A6692C58B9DACD /* HealthStore.modulemap */,
-				0C6F36A05F3D210476D3522933073A2F /* HealthStore.xcconfig */,
-				04D087C4D61750876B3B1A38E98438F1 /* HealthStore-dummy.m */,
-				ED58415D52F61E50FFF5EA63A408E76D /* HealthStore-prefix.pch */,
-				8E3D6D2433A98F298968641EEEC659D2 /* HealthStore-umbrella.h */,
-				388E51B4F34EF046B0E9BB7D621BA3C9 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/HealthStore";
-			sourceTree = "<group>";
-		};
 		5CE15E8BCEC158C6E750376DECE55CDB /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +131,14 @@
 				7AC11979936E1FB785470CE4D43830CD /* Pods-HealthStore_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		70558D85F4F3400EA6C1F6D238D1E561 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9CAA4C4A36014B6729B41D5C61E4645 /* HealthStore */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		7AC11979936E1FB785470CE4D43830CD /* Pods-HealthStore_Tests */ = {
@@ -163,21 +163,35 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				3188C6DB8B86154CFD5B4171FAFA4D6A /* Development Pods */,
+				70558D85F4F3400EA6C1F6D238D1E561 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				CA54456F8A33209E96C19349169D2E92 /* Products */,
 				5CE15E8BCEC158C6E750376DECE55CDB /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		94D11B616941A0597B3E6540A853CFB2 /* HealthStore */ = {
+		82EBCAD60A52D1BBC69B36BE8023117B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				3A3C21ACF5FEC13D4272C1533CF64DA5 /* ReplaceMe.swift */,
-				492D5A3C4C6DF8C0D6B1C9C6CADE6150 /* Support Files */,
+				24953EC3F9F6F976B8C731605EA41F1E /* Source.swift */,
+				418E9574AE25A21EDE14C35FC84A2C9A /* StepSource.swift */,
 			);
-			name = HealthStore;
-			path = ../..;
+			name = Sources;
+			path = HealthStore/Classes/Sources;
+			sourceTree = "<group>";
+		};
+		9BC8BC6E6F6ACE9998F69D04A7CCDF87 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C69AB04CD43889D76594A1616AEE314D /* HealthStore.modulemap */,
+				879E8F3EFC26BBCB1D40003CF93F6AE4 /* HealthStore.xcconfig */,
+				A2A1A1EB40C0CEAB8544E192733A4679 /* HealthStore-dummy.m */,
+				B694F63704559C84CCA5F6FE035E05D2 /* HealthStore-prefix.pch */,
+				52A46398E389A7EB8520E7D474487189 /* HealthStore-umbrella.h */,
+				531A605C08BAC8DF90BB56221CF05188 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HealthStore";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -206,6 +220,40 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		D6C10343128DB4E42BFA4A8F1C62FA59 /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				82643014E77E109CBFD37D81B99F9992 /* DailyQueryBuilder.swift */,
+				0F3D6DDE50B26B0F7C3C2DBEFCD0A6F6 /* HealthStoreQueryBuildable.swift */,
+				7AAD29EDDDE0FF8534C9AF56551CF9C1 /* RestrictedSourceQueryBuilder.swift */,
+			);
+			name = Builders;
+			path = HealthStore/Classes/Builders;
+			sourceTree = "<group>";
+		};
+		E2C97BCF8B59573BEE76E4320A5122D0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				60654A8610E950146E77B5774B266D0C /* Date+Extension.swift */,
+			);
+			name = Extensions;
+			path = HealthStore/Classes/Extensions;
+			sourceTree = "<group>";
+		};
+		E9CAA4C4A36014B6729B41D5C61E4645 /* HealthStore */ = {
+			isa = PBXGroup;
+			children = (
+				9873B38C792063FC32C3E2CC7F53B975 /* HealthSourceProvider.swift */,
+				DBABDD4760AD649800664714092A3352 /* HealthStore.swift */,
+				D6C10343128DB4E42BFA4A8F1C62FA59 /* Builders */,
+				E2C97BCF8B59573BEE76E4320A5122D0 /* Extensions */,
+				82EBCAD60A52D1BBC69B36BE8023117B /* Sources */,
+				9BC8BC6E6F6ACE9998F69D04A7CCDF87 /* Support Files */,
+			);
+			name = HealthStore;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -217,11 +265,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A86ED29A9E08AC269E956A1CA05C513 /* Headers */ = {
+		9CC263779602C5AB213486F8EC2686F8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8EFDFED6FA65ED821794F37C30A9F60 /* HealthStore-umbrella.h in Headers */,
+				2A3B68996251BCCB238DB77BFA791545 /* HealthStore-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +284,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		3F7D235496A746C21E65BEC51F3874EF /* HealthStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55546AFB2B44EA372A09890EB152E9B5 /* Build configuration list for PBXNativeTarget "HealthStore" */;
+			buildPhases = (
+				7E02B1152F6625652F27C83C94D24984 /* Sources */,
+				66B664FDD27763A81F2884D9AF086D7A /* Frameworks */,
+				9CC263779602C5AB213486F8EC2686F8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HealthStore;
+			productName = HealthStore;
+			productReference = 158B9FA878CD018FC27C59165B4130A1 /* HealthStore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		84A74687AF1A956DB30E3AC4E698E9D4 /* Pods-HealthStore_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56D362A3DEB84E1821A319B43F6EA479 /* Build configuration list for PBXNativeTarget "Pods-HealthStore_Tests" */;
@@ -251,23 +316,6 @@
 			name = "Pods-HealthStore_Tests";
 			productName = "Pods-HealthStore_Tests";
 			productReference = E046D6F53E95F366EC35D2A8355C6944 /* Pods_HealthStore_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		95FCD9A3761E33E1C25A8A04E1ED1294 /* HealthStore */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AEA65FE7B3BE60776DABD89315B2F540 /* Build configuration list for PBXNativeTarget "HealthStore" */;
-			buildPhases = (
-				FD731C74AF037756AE9C8B7421483013 /* Sources */,
-				AD37E62CB493950F65832B3A0613B2F8 /* Frameworks */,
-				8A86ED29A9E08AC269E956A1CA05C513 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = HealthStore;
-			productName = HealthStore;
-			productReference = 158B9FA878CD018FC27C59165B4130A1 /* HealthStore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E00D4BFD7960F80E0DB7C0B835DF2DE4 /* Pods-HealthStore_Example */ = {
@@ -309,7 +357,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				95FCD9A3761E33E1C25A8A04E1ED1294 /* HealthStore */,
+				3F7D235496A746C21E65BEC51F3874EF /* HealthStore */,
 				E00D4BFD7960F80E0DB7C0B835DF2DE4 /* Pods-HealthStore_Example */,
 				84A74687AF1A956DB30E3AC4E698E9D4 /* Pods-HealthStore_Tests */,
 			);
@@ -333,12 +381,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD731C74AF037756AE9C8B7421483013 /* Sources */ = {
+		7E02B1152F6625652F27C83C94D24984 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				014F54F9456ACF5DCFFC9A4EC2A7E189 /* HealthStore-dummy.m in Sources */,
-				8C3FFAF6EF455FE9F88704980E2B1201 /* ReplaceMe.swift in Sources */,
+				24AF34029A508C0E62DD361734549578 /* DailyQueryBuilder.swift in Sources */,
+				FB281579558EAB98E3FAF186E191E966 /* Date+Extension.swift in Sources */,
+				C15F0547FFBE3D75382D75174430F7D8 /* HealthSourceProvider.swift in Sources */,
+				0B6487C6DA46B694B4E36920DAF8339C /* HealthStore-dummy.m in Sources */,
+				132B7C46FF121F2460590472B1ABF511 /* HealthStore.swift in Sources */,
+				A8B2E685643A8E864586A3D1D7BFEEB2 /* HealthStoreQueryBuildable.swift in Sources */,
+				A77CAADC2A4B5D78EDD37A4320301CCA /* RestrictedSourceQueryBuilder.swift in Sources */,
+				4EF3B55840750B49074B6FF0F0FD6C8F /* Source.swift in Sources */,
+				E37EE155ABB71EB71A859F6B047659B6 /* StepSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,15 +403,47 @@
 		E28C6FBF80EAC40A3B79B870622D533D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HealthStore;
-			target = 95FCD9A3761E33E1C25A8A04E1ED1294 /* HealthStore */;
+			target = 3F7D235496A746C21E65BEC51F3874EF /* HealthStore */;
 			targetProxy = 30261DDEED880679DA4F7126FF482849 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		093757DA20965A25519DFE96FE656CC4 /* Release */ = {
+		0552D4D8990FAFB16C913DF2B13C045B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C6F36A05F3D210476D3522933073A2F /* HealthStore.xcconfig */;
+			baseConfigurationReference = 5AE0D562327467DA39A3A07369737D05 /* Pods-HealthStore_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HealthStore_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HealthStore_Tests/Pods-HealthStore_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HealthStore_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		32E44540BA7D47F7BB33FCF69D98162D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 879E8F3EFC26BBCB1D40003CF93F6AE4 /* HealthStore.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -377,16 +464,70 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
+			name = Debug;
+		};
+		6F9224530522DD3C735EC96CF142642E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
 			name = Release;
 		};
-		29FE756905373960841A4127CFF65C14 /* Release */ = {
+		780344B9CDC0B69ACFA478089B0845C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 18387150F6D435AB399C1EFB3237FEB3 /* Pods-HealthStore_Example.release.xcconfig */;
 			buildSettings = {
@@ -401,7 +542,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-HealthStore_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-HealthStore_Example/Pods-HealthStore_Example.modulemap";
@@ -420,7 +561,7 @@
 			};
 			name = Release;
 		};
-		33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */ = {
+		B57951D085A1B98A97F8A1062A5E5C5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -469,7 +610,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -480,9 +621,9 @@
 			};
 			name = Debug;
 		};
-		5323BAA107744BAD652772F343BF9366 /* Debug */ = {
+		D07871F79FB324912A832123564BAA08 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C6F36A05F3D210476D3522933073A2F /* HealthStore.xcconfig */;
+			baseConfigurationReference = 879E8F3EFC26BBCB1D40003CF93F6AE4 /* HealthStore.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -503,70 +644,16 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
-		};
-		731DC216E1A58545B559F6E0A2418060 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
 			name = Release;
 		};
-		9FB6142C654C9CF6689899A99AAC4C36 /* Debug */ = {
+		D667B32427933B46A3F524786EAB5339 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F65C552E7FE646DA8EF2E5CFA2E7D671 /* Pods-HealthStore_Example.debug.xcconfig */;
 			buildSettings = {
@@ -581,7 +668,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-HealthStore_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-HealthStore_Example/Pods-HealthStore_Example.modulemap";
@@ -600,7 +687,7 @@
 			};
 			name = Debug;
 		};
-		C2D054CDECC5F4ADAA72348BA809ABAC /* Release */ = {
+		E3F37FAC156503107334CF423A6E6D77 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E1DE9CE3A0203E67340939EAAB1EF76A /* Pods-HealthStore_Tests.release.xcconfig */;
 			buildSettings = {
@@ -615,7 +702,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-HealthStore_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-HealthStore_Tests/Pods-HealthStore_Tests.modulemap";
@@ -633,46 +720,23 @@
 			};
 			name = Release;
 		};
-		EA704C60A438EEC22314B92F9F6B109B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5AE0D562327467DA39A3A07369737D05 /* Pods-HealthStore_Tests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HealthStore_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HealthStore_Tests/Pods-HealthStore_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_HealthStore_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */,
-				731DC216E1A58545B559F6E0A2418060 /* Release */,
+				B57951D085A1B98A97F8A1062A5E5C5B /* Debug */,
+				6F9224530522DD3C735EC96CF142642E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55546AFB2B44EA372A09890EB152E9B5 /* Build configuration list for PBXNativeTarget "HealthStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32E44540BA7D47F7BB33FCF69D98162D /* Debug */,
+				D07871F79FB324912A832123564BAA08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -680,17 +744,8 @@
 		56D362A3DEB84E1821A319B43F6EA479 /* Build configuration list for PBXNativeTarget "Pods-HealthStore_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EA704C60A438EEC22314B92F9F6B109B /* Debug */,
-				C2D054CDECC5F4ADAA72348BA809ABAC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AEA65FE7B3BE60776DABD89315B2F540 /* Build configuration list for PBXNativeTarget "HealthStore" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5323BAA107744BAD652772F343BF9366 /* Debug */,
-				093757DA20965A25519DFE96FE656CC4 /* Release */,
+				0552D4D8990FAFB16C913DF2B13C045B /* Debug */,
+				E3F37FAC156503107334CF423A6E6D77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -698,8 +753,8 @@
 		BACB62AC7F80FC929F4EFD040E68CB6F /* Build configuration list for PBXNativeTarget "Pods-HealthStore_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9FB6142C654C9CF6689899A99AAC4C36 /* Debug */,
-				29FE756905373960841A4127CFF65C14 /* Release */,
+				D667B32427933B46A3F524786EAB5339 /* Debug */,
+				780344B9CDC0B69ACFA478089B0845C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

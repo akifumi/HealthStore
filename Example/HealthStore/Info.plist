@@ -35,5 +35,9 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 	</array>
+	<key>NSHealthShareUsageDescription</key>
+	<string>Use to acquire the number of steps.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>Use to update the number of steps.</string>
 </dict>
 </plist>

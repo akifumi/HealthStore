@@ -1,6 +1,8 @@
 use_frameworks!
 
 target 'HealthStore_Example' do
+  platform :ios, '9.0'
+
   pod 'HealthStore', :path => '../'
 
   target 'HealthStore_Tests' do
