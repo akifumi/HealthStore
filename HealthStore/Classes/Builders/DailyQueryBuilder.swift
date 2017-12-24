@@ -17,8 +17,8 @@ public struct DailyQueryBuilder: HealthStoreQueryBuildable {
     public let intervalComponents: DateComponents = DateComponents(day: 1)
     public let predicates: [NSPredicate] = []
 
-    public init(quantityType: HKQuantityType, calendar: Calendar = .current) {
+    public init(quantityType: HKQuantityType, anchorDate: Date = Date.startOfToday()) {
         self.quantityType = quantityType
-        self.anchorDate = calendar.date(bySettingHour: 0, minute: 0, second: 0, of: Date())!
+        self.anchorDate = anchorDate
     }
 }
