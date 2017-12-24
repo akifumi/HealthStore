@@ -15,7 +15,8 @@ public protocol HealthStoreQueryBuildable {
     var anchorDate: Date { get }
     var intervalComponents: DateComponents { get }
     var predicates: [NSPredicate] { get }
-    func build() -> HKStatisticsCollectionQuery
+    func build() -> HKStatisticsCollectionQuery?
+    func build(completion: @escaping (HKStatisticsCollectionQuery?) -> Void)
 }
 
 public extension HealthStoreQueryBuildable {
@@ -28,7 +29,7 @@ public extension HealthStoreQueryBuildable {
         return nil
     }
 
-    func build() -> HKStatisticsCollectionQuery {
+    func build() -> HKStatisticsCollectionQuery? {
         let predicate = NSCompoundPredicate(andPredicateWithSubpredicates: predicates)
         return HKStatisticsCollectionQuery(
             quantityType: quantityType,
@@ -36,5 +37,9 @@ public extension HealthStoreQueryBuildable {
             options: options,
             anchorDate: anchorDate,
             intervalComponents: intervalComponents)
+    }
+
+    func build(completion: @escaping (HKStatisticsCollectionQuery?) -> Void) {
+        completion(build())
     }
 }

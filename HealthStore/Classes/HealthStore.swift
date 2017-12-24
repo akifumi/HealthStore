@@ -39,8 +39,7 @@ public class HealthStore {
                 return
             }
 
-            let query = builder.build()
-            completion(query)
+            builder.build(completion: completion)
         }
     }
 
