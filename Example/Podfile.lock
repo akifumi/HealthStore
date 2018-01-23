@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  HealthStore: 903c0ee277c301d22f1900b9abfa5e128848ec0b
+  HealthStore: 38aeb1b2c0a57b16bb23b13352c8a4dd7d8689d0
 
 PODFILE CHECKSUM: 334bd0b8b66eb3db2ebb877681bf6ccdfe9642f8
 
